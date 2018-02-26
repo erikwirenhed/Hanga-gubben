@@ -14,6 +14,8 @@ public class main_hangagubben {
 	
 	if(sc.nextLine().equals("lätt")){
 		hangagubben_latt nyttSpel = new hangagubben_latt(new File("Lätta_ord.txt"));
+		
+		nyttSpel.getRandomeWord(0);
 	}
 	else{
 		

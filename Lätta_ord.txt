@@ -1,2 +1,4 @@
 hej
 erik
+korv
+deg

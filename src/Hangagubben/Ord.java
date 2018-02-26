@@ -7,4 +7,8 @@ public class Ord {
 	 Ord(String line) {
 			this.ord = line;
 		}
+	 @Override
+		public String toString(){
+			return this.ord;
+		}
 }
