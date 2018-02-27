@@ -26,12 +26,18 @@ public class main_hangagubben {
 		
 		HangmanWord wordSecret = new HangmanWord(line);
 		
+		while( line.equals(wordSecret.getSecretString())){
+		
 		System.out.println("Gissa på ett ord");
 		
 		System.out.println(wordSecret.getSecretString());
 		
-		/*guess Guess = new guess("o");*/
+		String Guessword = sc.nextLine();
 		
+		char a = wordSecret.firstWord(Guessword);
+		
+		wordSecret.guess(a);
+		}
 	
 		
 		

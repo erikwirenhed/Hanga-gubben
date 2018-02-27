@@ -50,7 +50,22 @@ public class HangmanWord {
 	}
 	
 	public String getSecretString(){
-		return secret;
-	}
 		
+		if(secret == word){
+			
+			return "win" + secret;
+		}
+		else{
+		return secret;
+		}
+	}
+	
+	
+	public char firstWord(String a){
+		
+		char[] c = a.toCharArray();
+		
+		char b = c[0];
+		return b;
+	}
 }
