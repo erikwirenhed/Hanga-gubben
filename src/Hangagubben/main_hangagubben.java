@@ -2,9 +2,12 @@ package Hangagubben;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main_hangagubben {
+	ArrayList<HangmanWord> lättaOrd = new ArrayList<HangmanWord>();
+	
 	public static void main(String[] args) throws FileNotFoundException {
 		
 	
@@ -15,12 +18,29 @@ public class main_hangagubben {
 	System.out.println("lätt eller svår?");
 	
 	if(sc.nextLine().equals("lätt")){
-		hangagubben_latt nyttSpel = new hangagubben_latt(new File("Lätta_ord.txt"));
 		
-		nyttSpel.getRandomeWord(0);
-	}
+		
+		Scanner filereader = new Scanner(new File("Lätta_ord.txt"));
+		
+		String line = filereader.nextLine();
+		
+		HangmanWord wordSecret = new HangmanWord(line);
+		
+		System.out.println("Gissa på ett ord");
+		
+		System.out.println(wordSecret.getSecretString());
+		
+		/*guess Guess = new guess("o");*/
+		
+	
+		
+		
+		
+			
+		}
+	
 	else{
-		
+		System.out.println("hej");
 	}
 }
 }

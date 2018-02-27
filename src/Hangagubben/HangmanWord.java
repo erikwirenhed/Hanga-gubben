@@ -1,9 +1,27 @@
 package Hangagubben;
 
-public class HangmanWord {
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
+public class HangmanWord {
+	/*ArrayList<HangmanWord> lättaOrd = new ArrayList<HangmanWord>();*/
 	private final String word;
 	private String secret;
+	
+	/*public void HnagmanWord(File F) throws FileNotFoundException{
+		Scanner filereader = new Scanner(F);
+		while (filereader.hasNextLine()) {
+
+			String line = filereader.nextLine();
+
+			Ord ord = new Ord(line);
+
+			lättaOrd.add(ord);
+	}
+		filereader.close();
+}*/
 	
 	public HangmanWord(String word){
 		this.word = word.toUpperCase();

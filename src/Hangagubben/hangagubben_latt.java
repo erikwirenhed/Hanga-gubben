@@ -8,21 +8,11 @@ import java.util.Scanner;
 
 
 public class hangagubben_latt {
-	ArrayList<Ord> lättaOrd = new ArrayList<Ord>();
-	ArrayList<Bokstav> Bokstav = new ArrayList<Bokstav>();
 	
-	public hangagubben_latt(File F) throws FileNotFoundException{
-			Scanner filereader = new Scanner(F);
-			while (filereader.hasNextLine()) {
-
-				String line = filereader.nextLine();
-
-				Ord ord = new Ord(line);
-
-				lättaOrd.add(ord);
-		}
-			filereader.close();
-	}
+	
+	
+	
+			
 
 
 public void getRandomeWord(int i){
