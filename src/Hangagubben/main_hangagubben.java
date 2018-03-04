@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthScrollBarUI;
+
 public class main_hangagubben {
 	ArrayList<HangmanWord> lättaOrd = new ArrayList<HangmanWord>();
 	
@@ -24,9 +26,12 @@ public class main_hangagubben {
 		
 		String line = filereader.nextLine();
 		
+		line.toUpperCase();
+		
 		HangmanWord wordSecret = new HangmanWord(line);
 		
-		while( line.equals(wordSecret.getSecretString())){
+		
+		while( !wordSecret.getWordString().equals(wordSecret.getSecretString())){
 		
 		System.out.println("Gissa på ett ord");
 		
@@ -38,7 +43,6 @@ public class main_hangagubben {
 		
 		wordSecret.guess(a);
 		}
-	
 		
 		
 		

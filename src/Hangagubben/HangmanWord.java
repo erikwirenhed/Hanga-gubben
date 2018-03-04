@@ -6,22 +6,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class HangmanWord {
-	/*ArrayList<HangmanWord> lättaOrd = new ArrayList<HangmanWord>();*/
 	private final String word;
 	private String secret;
 	
-	/*public void HnagmanWord(File F) throws FileNotFoundException{
-		Scanner filereader = new Scanner(F);
-		while (filereader.hasNextLine()) {
-
-			String line = filereader.nextLine();
-
-			Ord ord = new Ord(line);
-
-			lättaOrd.add(ord);
-	}
-		filereader.close();
-}*/
+	
 	
 	public HangmanWord(String word){
 		this.word = word.toUpperCase();
@@ -51,15 +39,18 @@ public class HangmanWord {
 	
 	public String getSecretString(){
 		
-		if(secret == word){
+		if(secret.equals( word)){
 			
-			return "win" + secret;
+			return "win" + " " + secret;
 		}
 		else{
 		return secret;
 		}
 	}
 	
+public String getWordString(){
+	return word;
+}
 	
 	public char firstWord(String a){
 		
