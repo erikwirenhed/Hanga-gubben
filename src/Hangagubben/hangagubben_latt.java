@@ -17,7 +17,7 @@ public class hangagubben_latt {
 
 public void getRandomeWord(int i){
 
-Collections.shuffle(lättaOrd);
+	Collections.shuffle(lättaOrd);
 
 	String e = lättaOrd.get(i);
 	

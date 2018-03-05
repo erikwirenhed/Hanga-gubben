@@ -51,6 +51,28 @@ public class main_hangagubben {
 	
 	else{
 		System.out.println("hej");
+		
+Scanner filereader = new Scanner(new File("Svåra_ord.txt"));
+		
+		String line = filereader.nextLine();
+		
+		line.toUpperCase();
+		
+		HangmanWord wordSecret = new HangmanWord(line);
+		
+		
+		while( !wordSecret.getWordString().equals(wordSecret.getSecretString())){
+		
+		System.out.println("Gissa på ett ord");
+		
+		System.out.println(wordSecret.getSecretString());
+		
+		String Guessword = sc.nextLine();
+		
+		char a = wordSecret.firstWord(Guessword);
+		
+		wordSecret.guess(a);
 	}
+}
 }
 }
