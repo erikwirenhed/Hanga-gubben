@@ -41,7 +41,7 @@ public class HangmanWord {
 		
 		if(secret.equals( word)){
 			
-			return "win" + " " + secret;
+			return "DU VANN!!!" + " " + "Ordet var" + " " + secret;
 		}
 		else{
 		return secret;
