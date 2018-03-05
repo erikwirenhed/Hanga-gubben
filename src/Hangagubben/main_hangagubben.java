@@ -33,7 +33,7 @@ public class main_hangagubben {
 		
 		while( !wordSecret.getWordString().equals(wordSecret.getSecretString())){
 		
-		System.out.println("Gissa på ett ord");
+		System.out.println("Gissa på en bokstav");
 		
 		System.out.println(wordSecret.getSecretString());
 		
@@ -63,7 +63,7 @@ Scanner filereader = new Scanner(new File("Svåra_ord.txt"));
 		
 		while( !wordSecret.getWordString().equals(wordSecret.getSecretString())){
 		
-		System.out.println("Gissa på ett ord");
+		System.out.println("Gissa på en bokstav");
 		
 		System.out.println(wordSecret.getSecretString());
 		
