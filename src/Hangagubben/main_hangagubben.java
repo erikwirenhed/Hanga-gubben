@@ -56,7 +56,6 @@ public class main_hangagubben {
 		}
 	
 	else{
-		System.out.println("hej");
 		
 Scanner filereader = new Scanner(new File("Svåra_ord.txt"));
 		
