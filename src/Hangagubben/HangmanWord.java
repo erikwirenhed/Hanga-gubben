@@ -48,9 +48,9 @@ public class HangmanWord {
 		}
 	}
 	
-public String getWordString(){
-	return word;
-}
+	public String getWordString(){
+		return word;
+	}
 	
 	public char firstWord(String a){
 		

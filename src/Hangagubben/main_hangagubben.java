@@ -22,13 +22,19 @@ public class main_hangagubben {
 	if(sc.nextLine().equals("lätt")){
 		
 		
-		Scanner filereader = new Scanner(new File("Lätta_ord.txt"));
+		String line = "";
 		
-		String line = filereader.nextLine();
 		
+		for (int i = 0; i < (int)4*Math.random()+1; i++) {
+			Scanner filereader = new Scanner(new File("Lätta_ord.txt"));
+			line = filereader.nextLine();
+		}
+		System.out.println(line);
 		line.toUpperCase();
-		
 		HangmanWord wordSecret = new HangmanWord(line);
+		
+		
+		
 		
 		
 		while( !wordSecret.getWordString().equals(wordSecret.getSecretString())){
